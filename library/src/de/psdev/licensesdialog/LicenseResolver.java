@@ -18,8 +18,10 @@ package de.psdev.licensesdialog;
 
 import de.psdev.licensesdialog.licenses.ApacheSoftwareLicense20;
 import de.psdev.licensesdialog.licenses.ISCLicense;
+import de.psdev.licensesdialog.licenses.JSONLicense;
 import de.psdev.licensesdialog.licenses.MITLicense;
 import de.psdev.licensesdialog.licenses.License;
+
 import org.simpleframework.xml.transform.Transform;
 
 import java.util.HashMap;
@@ -35,6 +37,7 @@ public class LicenseResolver implements Transform<License> {
         registerLicense(new ApacheSoftwareLicense20());
         registerLicense(new ISCLicense());
         registerLicense(new MITLicense());
+        registerLicense(new JSONLicense());
     }
 
     /**
